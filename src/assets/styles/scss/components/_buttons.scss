@@ -1,0 +1,7 @@
+.success-button {
+    @include button($primary-green);
+}
+
+.danger-button {
+    @include button($primary-red);
+}

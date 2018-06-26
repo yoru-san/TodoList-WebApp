@@ -1,0 +1,20 @@
+// text
+
+.text-danger {
+    color: $primary-red !important;
+}
+
+// buttons
+.btn-success {
+    @extend .success-button;
+}
+
+.btn-danger {
+    @extend .danger-button;
+}
+
+.btn {
+    &:focus {
+        outline: none;
+    }
+}

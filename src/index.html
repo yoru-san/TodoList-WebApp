@@ -1,14 +1,42 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AspWebapp</title>
-  <base href="/">
+<!DOCTYPE html>
+<html ng-app="webapp" ng-strict-di>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title page-title>Single Page Application using AngularJs</title>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/css/style.css">
 </head>
-<body>
-  <app-root></app-root>
+
+<body browser-detector ng-detector>
+    <div ui-view="content"></div>
+    <!-- dependency -->
+    <script type="text/javascript" src="//unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.min.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="//unpkg.com/@uirouter/angularjs@1.0.15/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="//unpkg.com/angular-loading-bar@0.9.0/build/loading-bar.min.js"></script>
+    <!-- main config file -->
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/config/site-config.js"></script>
+    <!-- constants -->
+    <script type="text/javascript" src="app/constants/global.js"></script>
+    <script type="text/javascript" src="app/constants/route-names.js"></script>
+    <!-- config files -->
+    <script type="text/javascript" src="app/config/angular-config.js"></script>
+    <script type="text/javascript" src="app/config/runner.js"></script>
+    <script type="text/javascript" src="app/config/router-config.js"></script>
+    <!-- services -->
+    <script type="text/javascript" src="app/services/browser.js"></script>
+    <!-- directives -->
+    <script type="text/javascript" src="app/directives/browserDetector.js"></script>
+    <script type="text/javascript" src="app/directives/ngDetector.js"></script>
+    <script type="text/javascript" src="app/directives/pageTitle.js"></script>
+    <!-- controllers -->
+    <script type="text/javascript" src="app/controllers/appCtrl.js"></script>
 </body>
+
 </html>

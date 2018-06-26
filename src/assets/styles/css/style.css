@@ -1,0 +1,96 @@
+.bg-green, .navbar {
+  background-color: #00a99d;
+}
+
+a {
+  color: #00a99d;
+  cursor: pointer;
+}
+a:hover {
+  color: #00a99d;
+}
+a:focus {
+  color: #00a99d;
+}
+
+mark {
+  background-color: #f1f1f1;
+  padding: 2px 5px;
+  border-radius: 2px;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  box-shadow: 0 0 0 1000px white inset !important;
+}
+
+:focus {
+  outline: none;
+}
+
+.success-button, .btn-success {
+  background-color: #00a99d;
+  border-color: #00a99d;
+}
+.success-button:active, .btn-success:active, .success-button:focus, .btn-success:focus, .success-button:hover, .btn-success:hover {
+  background-color: #00a99d;
+  border-color: #00a99d;
+  box-shadow: none;
+}
+
+.danger-button, .btn-danger {
+  background-color: #f15a24;
+  border-color: #f15a24;
+}
+.danger-button:active, .btn-danger:active, .danger-button:focus, .btn-danger:focus, .danger-button:hover, .btn-danger:hover {
+  background-color: #f15a24;
+  border-color: #f15a24;
+  box-shadow: none;
+}
+
+.text-danger {
+  color: #f15a24 !important;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+.navbar a.navbar-brand {
+  color: white;
+  font-size: 16px;
+}
+.navbar a.navbar-brand:focus, .navbar a.navbar-brand:hover {
+  color: white;
+}
+
+.landing-page {
+  padding-top: 8%;
+}
+.landing-page .m-ctnt {
+  width: 45rem;
+  margin: auto;
+  text-align: center;
+}
+.landing-page .m-ctnt img {
+  height: 30rem;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .m-ctnt {
+    width: 30rem;
+  }
+}
+
+.page-not-found {
+  padding-top: 12%;
+  text-align: center;
+}
+.page-not-found a {
+  color: #00a99d;
+}
+.page-not-found a:hover, .page-not-found a:focus {
+  color: #00a99d;
+}

@@ -1,0 +1,17 @@
+.navbar {
+    margin-bottom: 0;
+
+    @extend .bg-green;
+
+    a {
+        &.navbar-brand {
+            color: white;
+            font-size: 16px;
+
+            &:focus,
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
