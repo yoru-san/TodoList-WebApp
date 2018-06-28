@@ -10,7 +10,7 @@
       "resolved": "C:\\Users\\cecel\\AppData\\Roaming\\nvm\\v8.11.1\\node_modules\\generator-fountain-webapp\\node_modules\\generator-fountain-angular1\\generators\\app\\index.js",
       "namespace": "fountain-angular1:app",
       "_": [],
-      "sample": "techs",
+      "sample": "todoMVC",
       "router": "uirouter"
     }
   }

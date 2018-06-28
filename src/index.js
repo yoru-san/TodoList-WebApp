@@ -1,20 +1,25 @@
 import angular from 'angular';
+import 'todomvc-app-css/index.css';
 
-import {techsModule} from './app/techs/index';
+import {TodoService} from './app/todos/todos';
+import {App} from './app/containers/App';
+import {Header} from './app/components/Header';
+import {MainSection} from './app/components/MainSection';
+import {TodoTextInput} from './app/components/TodoTextInput';
+import {TodoItem} from './app/components/TodoItem';
+import {Footer} from './app/components/Footer';
 import 'angular-ui-router';
 import routesConfig from './routes';
-
-import {main} from './app/main';
-import {header} from './app/header';
-import {title} from './app/title';
-import {footer} from './app/footer';
 
 import './index.scss';
 
 angular
-  .module('app', [techsModule, 'ui.router'])
+  .module('app', ['ui.router'])
   .config(routesConfig)
-  .component('app', main)
-  .component('fountainHeader', header)
-  .component('fountainTitle', title)
-  .component('fountainFooter', footer);
+  .service('todoService', TodoService)
+  .component('app', App)
+  .component('headerComponent', Header)
+  .component('footerComponent', Footer)
+  .component('mainSection', MainSection)
+  .component('todoTextInput', TodoTextInput)
+  .component('todoItem', TodoItem);
